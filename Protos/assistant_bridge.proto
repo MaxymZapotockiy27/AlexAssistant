@@ -1,0 +1,42 @@
+﻿syntax = "proto3";
+
+// Service definition
+service AssistantBridge {
+  rpc GeminiQues (GeminiRequest) returns (GeminiResponse);
+  rpc GetCity (CityRequest) returns (CityResponse);
+  rpc GetWeather (CityRequest) returns (WeatherResponse);
+  rpc ActivateForm (ActivateFormRequest) returns (Status);  // ActivateForm RPC call
+}
+
+// Message definitions
+message GeminiRequest {
+  string message = 1;
+}
+
+message ActivateFormRequest {
+  bool activate = 1;  // Boolean to activate or deactivate the form
+}
+
+message GeminiResponse {
+  repeated string responses = 1;
+}
+
+message CityRequest {
+  string city = 1;
+}
+
+message CityResponse {
+  string fullCityName = 1;
+}
+
+message WeatherResponse {
+  string city = 1;
+  string description = 2;
+  double temperature = 3;
+}
+
+// Status message
+message Status {
+  bool success = 1;  // Success flag
+  string message = 2;  // Optional message
+}

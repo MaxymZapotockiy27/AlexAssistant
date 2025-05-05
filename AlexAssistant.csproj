@@ -1,0 +1,471 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Animations\AnimationAssitant\0001.png" />
+    <None Remove="Animations\AnimationAssitant\0002.png" />
+    <None Remove="Animations\AnimationAssitant\0003.png" />
+    <None Remove="Animations\AnimationAssitant\0004.png" />
+    <None Remove="Animations\AnimationAssitant\0005.png" />
+    <None Remove="Animations\AnimationAssitant\0006.png" />
+    <None Remove="Animations\AnimationAssitant\0007.png" />
+    <None Remove="Animations\AnimationAssitant\0008.png" />
+    <None Remove="Animations\AnimationAssitant\0009.png" />
+    <None Remove="Animations\AnimationAssitant\0010.png" />
+    <None Remove="Animations\AnimationAssitant\0011.png" />
+    <None Remove="Animations\AnimationAssitant\0012.png" />
+    <None Remove="Animations\AnimationAssitant\0013.png" />
+    <None Remove="Animations\AnimationAssitant\0014.png" />
+    <None Remove="Animations\AnimationAssitant\0015.png" />
+    <None Remove="Animations\AnimationAssitant\0016.png" />
+    <None Remove="Animations\AnimationAssitant\0017.png" />
+    <None Remove="Animations\AnimationAssitant\0018.png" />
+    <None Remove="Animations\AnimationAssitant\0019.png" />
+    <None Remove="Animations\AnimationAssitant\0020.png" />
+    <None Remove="Animations\AnimationAssitant\0021.png" />
+    <None Remove="Animations\AnimationAssitant\0022.png" />
+    <None Remove="Animations\AnimationAssitant\0023.png" />
+    <None Remove="Animations\AnimationAssitant\0024.png" />
+    <None Remove="Animations\AnimationAssitant\0025.png" />
+    <None Remove="Animations\AnimationAssitant\0026.png" />
+    <None Remove="Animations\AnimationAssitant\0027.png" />
+    <None Remove="Animations\AnimationAssitant\0028.png" />
+    <None Remove="Animations\AnimationAssitant\0029.png" />
+    <None Remove="Animations\AnimationAssitant\0030.png" />
+    <None Remove="Animations\AnimationAssitant\0031.png" />
+    <None Remove="Animations\AnimationAssitant\0032.png" />
+    <None Remove="Animations\AnimationAssitant\0033.png" />
+    <None Remove="Animations\AnimationAssitant\0034.png" />
+    <None Remove="Animations\AnimationAssitant\0035.png" />
+    <None Remove="Animations\AnimationAssitant\0036.png" />
+    <None Remove="Animations\AnimationAssitant\0037.png" />
+    <None Remove="Animations\AnimationAssitant\0038.png" />
+    <None Remove="Animations\AnimationAssitant\0039.png" />
+    <None Remove="Animations\AnimationAssitant\0040.png" />
+    <None Remove="Animations\AnimationAssitant\0041.png" />
+    <None Remove="Animations\AnimationAssitant\0042.png" />
+    <None Remove="Animations\AnimationAssitant\0043.png" />
+    <None Remove="Animations\AnimationAssitant\0044.png" />
+    <None Remove="Animations\AnimationAssitant\0045.png" />
+    <None Remove="Animations\AnimationAssitant\0046.png" />
+    <None Remove="Animations\AnimationAssitant\0047.png" />
+    <None Remove="Animations\AnimationAssitant\0048.png" />
+    <None Remove="AppImages\0034.ico" />
+    <None Remove="AppImages\favicon %281%29.ico" />
+    <None Remove="AppImages\favicon.ico" />
+    <None Remove="appsettings.json" />
+    <None Remove="assistant_bridge.proto" />
+    <None Remove="assistant_bridge_pb2.py" />
+    <None Remove="assistant_bridge_pb2_grpc.py" />
+    <None Remove="HaarCascades\haarcascade_frontalface_default.xml" />
+    <None Remove="Protos\assistant_bridge.proto" />
+    <None Remove="PythonBackend\assistant_bridge_pb2.py" />
+    <None Remove="PythonBackend\assistant_bridge_pb2_grpc.py" />
+    <None Remove="PythonBackend\assitant_code.py" />
+    <None Remove="PythonBackend\control_pb2.py" />
+    <None Remove="PythonBackend\control_pb2_grpc.py" />
+    <None Remove="PythonBackend\get-pip.py" />
+    <None Remove="PythonBackend\libcrypto-3.dll" />
+    <None Remove="PythonBackend\libffi-8.dll" />
+    <None Remove="PythonBackend\libssl-3.dll" />
+    <None Remove="PythonBackend\LICENSE.txt" />
+    <None Remove="PythonBackend\pyexpat.pyd" />
+    <None Remove="PythonBackend\python.cat" />
+    <None Remove="PythonBackend\python.exe" />
+    <None Remove="PythonBackend\python3.dll" />
+    <None Remove="PythonBackend\python311.dll" />
+    <None Remove="PythonBackend\python311.zip" />
+    <None Remove="PythonBackend\python311._pth" />
+    <None Remove="PythonBackend\pythonw.exe" />
+    <None Remove="PythonBackend\requirements.txt" />
+    <None Remove="PythonBackend\select.pyd" />
+    <None Remove="PythonBackend\serve.py" />
+    <None Remove="PythonBackend\sqlite3.dll" />
+    <None Remove="PythonBackend\unicodedata.pyd" />
+    <None Remove="PythonBackend\vcruntime140.dll" />
+    <None Remove="PythonBackend\vcruntime140_1.dll" />
+    <None Remove="PythonBackend\winsound.pyd" />
+    <None Remove="PythonBackend\_asyncio.pyd" />
+    <None Remove="PythonBackend\_bz2.pyd" />
+    <None Remove="PythonBackend\_ctypes.pyd" />
+    <None Remove="PythonBackend\_decimal.pyd" />
+    <None Remove="PythonBackend\_elementtree.pyd" />
+    <None Remove="PythonBackend\_hashlib.pyd" />
+    <None Remove="PythonBackend\_lzma.pyd" />
+    <None Remove="PythonBackend\_msi.pyd" />
+    <None Remove="PythonBackend\_multiprocessing.pyd" />
+    <None Remove="PythonBackend\_overlapped.pyd" />
+    <None Remove="PythonBackend\_queue.pyd" />
+    <None Remove="PythonBackend\_socket.pyd" />
+    <None Remove="PythonBackend\_sqlite3.pyd" />
+    <None Remove="PythonBackend\_ssl.pyd" />
+    <None Remove="PythonBackend\_uuid.pyd" />
+    <None Remove="PythonBackend\_zoneinfo.pyd" />
+    <None Remove="WallpaperAnimations\airplane.mp4" />
+    <None Remove="WallpaperAnimations\CosmoAnimation.mp4" />
+    <None Remove="worldcities.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Animations\AnimationAssitant\0001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0008.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0009.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0012.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0013.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0014.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0015.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0016.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0017.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0018.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0019.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0020.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0021.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0022.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0023.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0024.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0025.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0026.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0028.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0029.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0030.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0031.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0032.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0034.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0035.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0036.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0037.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0038.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0039.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0040.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0041.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0042.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0043.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0044.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0045.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0046.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0047.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Animations\AnimationAssitant\0048.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AppImages\0034.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AppImages\favicon (1).ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AppImages\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assistant_bridge_pb2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assistant_bridge_pb2_grpc.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HaarCascades\haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Protos\assistant_bridge.proto">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\assistant_bridge_pb2.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\assistant_bridge_pb2_grpc.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\assitant_code.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\control_pb2.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\control_pb2_grpc.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\get-pip.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\libcrypto-3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\libffi-8.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\libssl-3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\pyexpat.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\python.cat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\python.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\python3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\python311.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\python311.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\python311._pth">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\pythonw.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\requirements.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\select.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\serve.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\sqlite3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\unicodedata.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\vcruntime140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\vcruntime140_1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\winsound.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_asyncio.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_bz2.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_ctypes.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_decimal.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_elementtree.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_hashlib.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_lzma.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_msi.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_multiprocessing.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_overlapped.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_queue.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_socket.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_sqlite3.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_ssl.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_uuid.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PythonBackend\_zoneinfo.pyd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WallpaperAnimations\CosmoAnimation.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WallpaperAnimations\airplane.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="worldcities.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assistant_bridge.proto">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="DirectShowLib" Version="1.0.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.30.2" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.70.0" />
+    <PackageReference Include="Grpc.Core" Version="2.46.6" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.70.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.70.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.71.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3179.45" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.10.0.20241108" />
+    <PackageReference Include="OpenCvSharp4.WpfExtensions" Version="4.10.0.20241108" />
+    <PackageReference Include="System.Speech" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FaceModels\" />
+  </ItemGroup>
+
+	<ItemGroup>
+    <None Update="Protos\control.proto">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="Protos\control.proto" GrpcServices="Client" />
+	</ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="assistant_bridge.proto" GrpcServices="Server" />
+	</ItemGroup>
+
+</Project>

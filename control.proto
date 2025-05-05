@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package control; 
+
+service ControlService {
+  rpc TurnOn (TurnOnRequest) returns (Status);
+  rpc TurnOff (TurnOffRequest) returns (Status);
+}
+
+message TurnOnRequest {
+  string mic_name_target = 1;
+}
+message TurnOffRequest {}
+message Status {
+  string message = 1;
+}
+
+
+service CSharpApiService {
+  rpc GetWeatherInformation (WeatherRequest) returns (WeatherResponse);
+}
+
+message WeatherRequest {
+  string city = 1; 
+}
+
+
+message WeatherResponse {
+  string weather_info = 1; 
+  bool success = 2;        
+}

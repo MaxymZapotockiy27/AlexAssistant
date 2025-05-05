@@ -1,0 +1,49 @@
+﻿<Page x:Class="AlexAssistant.FirstLaunch"
+      MouseDown ="Page_MouseDown" 
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:AlexAssistant"
+      mc:Ignorable="d"
+      d:DesignHeight="480"
+      d:DesignWidth="400"
+      Title="First Launch - Alex Assistant"
+      Background="#FF2C2C2C"
+      Foreground="White"
+      Loaded="Page_Loaded"
+      Unloaded="Page_Unloaded">
+  
+
+    <Grid>
+        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+
+            <Image x:Name="AnimationImage"
+                   Width="250" Height="250"
+                   Stretch="Uniform"
+                   RenderOptions.BitmapScalingMode="HighQuality"
+                   />
+
+            <TextBlock x:Name="ChangingTextBlock"
+                       Text="Hello, I am Alex."
+                       FontSize="24"
+                       FontWeight="SemiBold"
+                       FontFamily="Segoe UI"
+                       Foreground="#FFE0E0E0"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"
+                       Margin="0,25,0,10"/>
+
+            <TextBlock Text="Getting things ready for you..."
+                       FontSize="14"
+                       FontWeight="Normal"
+                       FontFamily="Segoe UI"
+                       Foreground="#FFAAAAAA"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center"
+                       Margin="0,0,0,15"/>
+
+        </StackPanel>
+    </Grid>
+</Page>

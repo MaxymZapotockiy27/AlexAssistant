@@ -1,0 +1,23 @@
+﻿// control.proto
+syntax = "proto3";
+
+package control;
+
+service ControlService {
+  // TurnOn now accepts a request with the microphone index
+  rpc TurnOn (TurnOnRequest) returns (Status);
+  rpc TurnOff (TurnOffRequest) returns (Status);
+}
+
+// Request for turning on, includes mic index
+message TurnOnRequest {
+  string mic_name_target = 1; // Add this line
+}
+
+// Empty request for turning off (can remain empty)
+message TurnOffRequest {}
+
+// Status message remains the same
+message Status {
+  string message = 1;
+}
